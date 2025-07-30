@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <h1>Let's Connect</h1>
+  <p class="subtitle">Open to internships, collaborations, and tech projects.</p>
+  {% if success %}
+    <p class="highlight">Thanks for your message! We'll get back to you soon.</p>
+  {% endif %}
+  <div class="grid">
+    <div class="grid-item">
+      <p><strong>Email:</strong> harshininarayan1503@gmail.com</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/harshininarayan/</p>
+      <p><strong>Phone:</strong> +91-8147424676</p>
+    </div>
+    <div class="grid-item">
+      <form method="POST" action="/contact">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea rows="4" name="message" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 40px;">
+    <h2>harshi.ai</h2>
+    <p>Thanks for stopping by!</p>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+    <div class="about-section">
+        <h1>About Me</h1>
+        <img src="{{ url_for('static', filename='hln1.jpg') }}" alt="Avatar" class="avatar">
+        <h2>Hi, I'm Harshini L - a AIML student and aspiring Data scientist.</h2>
+        <p class="highlight">"Crafting Intelligent Solutions with Data & Code.</p>
+    </div>
+
+    <div class="about-subsection">
+        <h2>Education</h2>
+        <p>I’m currently pursuing my 7th semester in AIML at Rajarajeswari College of Engineering University. I’ve studied ML algorithms, OOP's concepts, Data Anaylsis and Visualization.</p>
+    </div>
+
+    <div class="about-subsection">
+    <h2>Interests</h2>
+    <div class="interest-icons">
+      <div>
+        <img src="{{ url_for('static', filename='python.png') }}" alt="Programming" class="icon">
+        <p><strong>Programming</strong></p>
+      </div>
+      <div>
+        <img src="{{ url_for('static', filename='ai.png') }}" alt="AI" class="icon">
+        <p><strong>Artificial Intelligence</strong></p>
+      </div>
+      <div>
+        <img src="{{ url_for('static', filename='Data AV.png') }}" alt="Data Analysis and Visualization" class="icon">
+        <p><strong>Data Analytics</strong></p>
+      </div>
+      <div>
+        <img src="{{ url_for('static', filename='ml.png') }}" alt="Machine Learning and Data Science" class="icon">
+        <p><strong>ML & Data Science</strong></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+
+

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header>
+    <img src="{{ url_for('static', filename='hln1.jpg') }}" alt="Profile Pic" class="avatar">
+    <h1>Hi, I’m Harshini L <br><span>Building smart solutions with data and code</span></h1>
+    <p class="tech"> Crafting Intelligent Solutions with Data & Code </p>
+</header>
+
+<section class="about">
+    <h2>ABOUT ME</h2>
+    <p>I’m a AIML student in my 7th semester with interests in AI/ML, Data Analyst, and Data Science.</p>
+    <div class="highlight">I have hands-on experience developing real-world Machine Learning projects, analyzing data, and creating visualizations .</div>
+</section>
+
+<section class="projects">
+    <h2>PROJECTS</h2>
+    <div class="project-list">
+        <div class="project">
+            <img src="{{ url_for('static', filename='ml+iot.png') }}" alt="ML Icon">
+            <p>Machine Learning </p>
+        </div>
+        <div class="project">
+            <img src="{{ url_for('static', filename='data ana HOME.png') }}" alt="Power BI">
+            <p>Data Analytics</p>
+        </div>
+        <div class="project">
+            <img src="{{ url_for('static', filename='python.png') }}" alt="Python Icon">
+            <p>Python & OOPs</p>
+        </div>
+    </div>
+<section class="skills">
+    <h2>SKILLS</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>TensorFlow</span>
+        <span>Pygame</span>
+        <span>Flask</span>
+        <span>SQL</span>
+        <span>Machine Learning</span>
+        <span>Data cleaning</span>
+        <span>Dashboards</span>
+        <span>Data Analysis</span>
+        <span>Data Visualization</span>
+    </div>
+</section>
+</section>
+
+{% endblock %}
